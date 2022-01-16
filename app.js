@@ -1,6 +1,5 @@
 const {question, simpan, hapus, lihat, ubah, rl} = require('./contact');
 
-
 const main = async () => {
     const value = await question("1).Tambah Data \n2).Hapus Data \n3).Ubah Data \n4). Lihat Semua Data \n Masukan Pilihan (1-4):");
     switch(value){
@@ -28,7 +27,7 @@ const main = async () => {
         rl.close();
       break;
       default:
-        console.log("\nInput is invalid");
+        console.log("\nInput is invalid, please try again");
         break;
     }
     console.log("=========================")
